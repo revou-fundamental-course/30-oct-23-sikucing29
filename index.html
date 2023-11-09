@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>Kalkulator Body Mass Index (BMI)</h1>
+        <p>muhamadrasyidridho33@gmail.com</p>
+    </div>
+
+    <div class="content">
+        <h2>Apa itu kalkulator BMI ??</h2>
+        <p>Body Mass Index (BMI) adalah metode hitung-hitungan mudah yang dapat memberikan informasi dasar terhadap masalah berat badan Anda secara keseluruhan. Angka ini bisa berperan sebagai tanda peringatan bahaya dan melindungi seseorang dari kematian akibat penyakit kronis terkait obesitas.</p>
+        <h6>Source: Great Eastern Life</6>
+        
+        <h2>Kalkulator BMI</h2>
+<!-- Pemilihan jenis kelamin -->  
+        <label for="gender">Jenis Kelamin: </label>
+        <select id="gender" required>
+        <option value="male">Laki-laki</option>
+        <option value="female">Perempuan</option>
+        </select>
+ <!-- Input Berat Badan dan tinggi badan -->
+        <label for="weight">Berat Badan (kg): </label>
+        <input type="number" id="weight" required>
+  
+        <label for="height">Tinggi Badan (m): </label>
+        <input type="number" id="height" step="0.01" required>
+  
+        <button onclick="calculateBMI()">Hitung BMI</button>
+  
+        <h3>Hasil BMI: <span id="result"></span></h3>
+        <p>Kategori: <span id="category"></span></p>
+        <p>Jenis Kelamin: <span id="genderResult"></span></p>
+        <p>Berat Badan: <span id="weightResult"></span> kg</p>
+        <p>Tinggi Badan: <span id="heightResult"></span> m</p>
+
+        <img src="BMIREVOU.png">
+
+<!-- untuk menguhubungkan js ke html-->
+        <script src="script.js"></script>
+
+</body>
+</html>
